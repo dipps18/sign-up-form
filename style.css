@@ -14,11 +14,11 @@
 
 body{
   display: flex;
+  font-family:sans-serif;
 }
 
 .center-content{
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   column-gap: 80px;
   row-gap: 20px;
@@ -47,21 +47,12 @@ body{
   margin-right: auto;
 }
 
-.odin-img-text>p{
-  display: inline;
-  position: relative;
-  bottom: 12px;
-  height: 140px;
-  font-family: "Norse bold";
-  color: white;
-  font-size: 70px;
-}
-
 .odin-container{
   position: relative;
   top: 21%;
   background: rgba(0, 0, 0, 0.4);
 }
+
 .odin-img-text{
   width: max-content;
   margin-left: auto;
@@ -70,16 +61,20 @@ body{
 }
 
 .odin-text{
+  display: inline;
+  position: relative;
   font-family: "Norse bold";
-  font-size: 60px;
+  bottom: 12px;
+  height: 140px;
   color: white;
+  font-size: 70px;
 }
 
 footer{
   position: absolute;
   bottom: 0;
   left: 0;
-  right:0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
   width: max-content;
@@ -104,10 +99,10 @@ abbr{
   margin-top: 25px;
 }
 
-.top-content>p{
-  font-size: 1.48em;
+.top-content{
+  font-size: 1.45em;
   font-weight: 500;
-  width: 780px;
+  width: 750px;
 }
 
 button, .log-in{
@@ -159,7 +154,7 @@ button{
   font-size: 15px;
   height: 50px;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px rgb(195, 193, 193);
+  box-shadow: 5px 5px 5px rgb(104, 92, 92);
   width: 200px;
   background: #596D48;
   color: white;
@@ -172,9 +167,21 @@ input{
   border: 2px solid #E5E7EB;
 }
 
-.error:invalid:before{
-  content:"Passwords do not match";
-  border: 2px solid #e24258;
+input[type="password"]:invalid{
+  border: 2px solid #9c1d2e;
 }
+
+input[type="password"]:invalid + span::after{
+  display: block;
+  content: "*Passwords do not match";
+  color: #9c1d2e;
+  font-size: .8em;
+}
+
+.focus:focus{
+  border: 1px solid rgba(129, 161, 246, 0.2);
+  box-shadow: 2px 2px 2px rgb(104, 92, 92);
+}
+
 
 
