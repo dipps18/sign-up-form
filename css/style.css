@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Norse bold";
+  src: url("../fonts/norse-bold-webfont.woff") format("woff");
+}
+body {
+  display: flex;
+  font-family: sans-serif;
+}
+
+.center-content {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 80px;
+  row-gap: 20px;
+  width: 600px;
+}
+
+.content {
+  height: 100vh;
+  width: 65vw;
+  background: #e7e7e7;
+}
+
+.navbar {
+  position: relative;
+  overflow-y: auto;
+  background-image: url(../images/leaf-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 35vw;
+  height: 100vh;
+}
+
+.odin-img {
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.odin-container {
+  position: relative;
+  top: 21%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.odin-img-text, footer {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.odin-img-text {
+  box-sizing: border-box;
+}
+
+.odin-text {
+  display: inline;
+  position: relative;
+  font-family: "Norse bold";
+  bottom: 12px;
+  height: 140px;
+  color: white;
+  font-size: 70px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+}
+
+a {
+  color: inherit;
+}
+
+abbr {
+  font-size: 0.8em;
+  color: #d33d3d;
+  display: block;
+  text-decoration: none;
+}
+
+.top-content {
+  margin: 120px 0 0 35px;
+}
+
+.bottom-content {
+  margin-top: 25px;
+}
+
+.top-content {
+  font-size: 1.45em;
+  font-weight: 500;
+  width: 750px;
+}
+
+button, .log-in {
+  margin-left: 35px;
+}
+
+.form-content-bg {
+  padding-left: 35px;
+  padding-top: 30px;
+  height: 245px;
+  margin-top: 45px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #aaa7a7;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  margin-bottom: 2px;
+}
+
+.center-header {
+  font-size: 1.35em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.log-in > a {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: 600;
+}
+
+input {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(97, 111, 238, 0.1);
+}
+
+button {
+  border: none;
+  font-size: 15px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #685c5c;
+  width: 200px;
+  background: #596D48;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+input {
+  border: 2px solid #E5E7EB;
+}
+
+input[type=password]:invalid {
+  border: 2px solid #9c1d2e;
+}
+
+input[type=password]:invalid + span::after {
+  display: block;
+  content: "*Passwords do not match";
+  color: #9c1d2e;
+  font-size: 0.8em;
+}
+
+.focus:focus {
+  border: 1px solid rgba(129, 161, 246, 0.2);
+  box-shadow: 2px 2px 2px #685c5c;
+}
+
+/*# sourceMappingURL=style.css.map */

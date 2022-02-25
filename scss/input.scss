@@ -5,11 +5,7 @@
 
 @font-face {
   font-family: "Norse bold";
-  src: url("fonts/norse-bold-webfont.woff");
-}
-
-@viewport{
-  max-zoom: 1.8;
+  src: url("../fonts/norse-bold-webfont.woff") format("woff");
 }
 
 body{
@@ -34,7 +30,7 @@ body{
 .navbar{
   position: relative;
   overflow-y: auto;
-  background-image: url(images/leaf-image.jpg);
+  background-image: url(../images/leaf-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 35vw;
@@ -52,11 +48,12 @@ body{
   top: 21%;
   background: rgba(0, 0, 0, 0.4);
 }
-
-.odin-img-text{
+.odin-img-text, footer{
   width: max-content;
   margin-left: auto;
   margin-right: auto;
+}
+.odin-img-text{
   box-sizing: border-box;
 }
 
@@ -75,9 +72,6 @@ footer{
   bottom: 0;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: max-content;
   color: white;
 }
 
@@ -182,6 +176,3 @@ input[type="password"]:invalid + span::after{
   border: 1px solid rgba(129, 161, 246, 0.2);
   box-shadow: 2px 2px 2px rgb(104, 92, 92);
 }
-
-
-
