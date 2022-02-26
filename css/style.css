@@ -21,6 +21,7 @@ body {
 }
 
 .content {
+  overflow: auto;
   height: 100vh;
   width: 65vw;
   background: #e7e7e7;
@@ -28,10 +29,9 @@ body {
 
 .navbar {
   position: relative;
-  overflow-y: auto;
+  overflow: auto;
   background-image: url(../images/leaf-image.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
   width: 35vw;
   height: 100vh;
 }
@@ -88,7 +88,7 @@ abbr {
 }
 
 .top-content {
-  margin: 120px 0 0 35px;
+  padding: 120px 0 0 35px;
 }
 
 .bottom-content {
@@ -106,8 +106,10 @@ button, .log-in {
 }
 
 .form-content-bg {
+  overflow: auto;
   padding-left: 35px;
   padding-top: 30px;
+  width: 100vw;
   height: 245px;
   margin-top: 45px;
   background: white;
